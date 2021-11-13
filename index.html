@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Shulbhi</title>
+        <style>
+            div{
+                width: 500px;
+                box-shadow: 0 0 10px black;
+                padding: 30px;
+                margin: 100px auto;
+                background-color: lightblue;
+                text-align:center;
+            }
+            div:hover{
+                color: blue;
+                background-color: whitesmoke;
+            }
+            h2{
+                display: inline-block;
+            }
+            body{
+                background-image: url("https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+
+
+        </style>
+        <script>
+                function fnshowGoodmorning(){
+                document.getElementById("show1").innerText="Good Morning";
+                document.getElementById("show2").innerText="Shulbhi Gupta";
+                document.getElementById("show1").style.color="green";
+                document.getElementById("show2").style.color="brown";   
+                }
+                function fnshowGoodAfternoon(){
+                document.getElementById("show1").innerText="Good Afternoon";
+                document.getElementById("show2").innerText="Shulbhi Gupta";
+                document.getElementById("show1").style.color="pink";
+                document.getElementById("show2").style.color="blue";
+                    
+                }
+                function fnshowGoodEvening(){
+                document.getElementById("show1").innerText="Good Evening";
+                document.getElementById("show2").innerText="Shulbhi Gupta";
+                document.getElementById("show1").style.color="red";
+                document.getElementById("show2").style.color="black";
+                    
+                }
+                function fnshowGoodNight(){
+                document.getElementById("show1").innerText="Good Night";
+                document.getElementById("show2").innerText="Shulbhi Gupta"; 
+                document.getElementById("show1").style.color="brown";
+                document.getElementById("show2").style.color="green";
+                }
+              
+        </script>
+        
+    </head>
+    <body>
+        <div>
+            <h2 id="show1">Hello</h2>
+            <h2 id="show2">Shulbhi</h2><br>
+            <button onclick="fnshowGoodmorning()">Good Morning</button>&nbsp;
+            <button onclick="fnshowGoodAfternoon()">Good Afternoon</button>&nbsp;
+            <button onclick="fnshowGoodEvening()">Good Evening</button>&nbsp;
+            <button onclick="fnshowGoodNight()">Good Night</button>
+        </div>
+    </body>
+</html>
